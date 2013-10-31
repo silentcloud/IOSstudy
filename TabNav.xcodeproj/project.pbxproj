@@ -19,7 +19,6 @@
 		51240282182151B700E8DA17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5124026A182151B700E8DA17 /* UIKit.framework */; };
 		5124028A182151B700E8DA17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51240288182151B700E8DA17 /* InfoPlist.strings */; };
 		5124028C182151B700E8DA17 /* TabNavTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5124028B182151B700E8DA17 /* TabNavTests.m */; };
-		512402971821520800E8DA17 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512402961821520800E8DA17 /* FirstViewController.m */; };
 		5124029A1821523100E8DA17 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512402991821523100E8DA17 /* SecondViewController.m */; };
 		5124029D182155C600E8DA17 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5124029C182155C600E8DA17 /* ThirdViewController.m */; };
 		512402A0182155D900E8DA17 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5124029F182155D900E8DA17 /* FourthViewController.m */; };
@@ -51,6 +50,7 @@
 		51C93B3C1822282A00A2A269 /* bg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C93B2A1822282A00A2A269 /* bg4.png */; };
 		51C93B571822365800A2A269 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C93B561822365800A2A269 /* TutorialViewController.m */; };
 		51C93B5B182236CE00A2A269 /* TutoriaItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C93B5A182236CE00A2A269 /* TutoriaItemViewController.m */; };
+		51F0B7E718225C6700A813B8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F0B7E618225C6700A813B8 /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +80,6 @@
 		51240287182151B700E8DA17 /* TabNavTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabNavTests-Info.plist"; sourceTree = "<group>"; };
 		51240289182151B700E8DA17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5124028B182151B700E8DA17 /* TabNavTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabNavTests.m; sourceTree = "<group>"; };
-		512402951821520800E8DA17 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		512402961821520800E8DA17 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		512402981821523100E8DA17 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = TabNav/SecondViewController.h; sourceTree = "<group>"; };
 		512402991821523100E8DA17 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = TabNav/SecondViewController.m; sourceTree = "<group>"; };
 		5124029B182155C600E8DA17 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = TabNav/ThirdViewController.h; sourceTree = "<group>"; };
@@ -118,6 +116,8 @@
 		51C93B561822365800A2A269 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
 		51C93B59182236CE00A2A269 /* TutoriaItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutoriaItemViewController.h; sourceTree = "<group>"; };
 		51C93B5A182236CE00A2A269 /* TutoriaItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutoriaItemViewController.m; sourceTree = "<group>"; };
+		51F0B7E518225C6700A813B8 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = TabNav/FirstViewController.h; sourceTree = "<group>"; };
+		51F0B7E618225C6700A813B8 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = TabNav/FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,8 +257,8 @@
 		51C93B581822366600A2A269 /* TabClass */ = {
 			isa = PBXGroup;
 			children = (
-				512402951821520800E8DA17 /* FirstViewController.h */,
-				512402961821520800E8DA17 /* FirstViewController.m */,
+				51F0B7E518225C6700A813B8 /* FirstViewController.h */,
+				51F0B7E618225C6700A813B8 /* FirstViewController.m */,
 				512402981821523100E8DA17 /* SecondViewController.h */,
 				512402991821523100E8DA17 /* SecondViewController.m */,
 				5124029B182155C600E8DA17 /* ThirdViewController.h */,
@@ -397,9 +397,9 @@
 				5124029D182155C600E8DA17 /* ThirdViewController.m in Sources */,
 				51240277182151B700E8DA17 /* TabNavAppDelegate.m in Sources */,
 				51C93B5B182236CE00A2A269 /* TutoriaItemViewController.m in Sources */,
-				512402971821520800E8DA17 /* FirstViewController.m in Sources */,
 				51C93B571822365800A2A269 /* TutorialViewController.m in Sources */,
 				51240273182151B700E8DA17 /* main.m in Sources */,
+				51F0B7E718225C6700A813B8 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
