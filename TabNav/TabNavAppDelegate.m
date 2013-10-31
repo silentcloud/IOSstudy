@@ -30,6 +30,8 @@
     FirstViewController *firstViewController = [[FirstViewController alloc] init];
     UINavigationController *alipayNav = [[UINavigationController alloc]
                                          initWithRootViewController: firstViewController];
+    alipayNav.navigationBar.tintColor = [UIColor whiteColor];
+    alipayNav.navigationBar.barStyle = UIBarStyleBlack;
     UITabBarItem *alipayTab = [[UITabBarItem alloc] initWithTitle: @"支付宝" image:nil tag: 0];
     alipayNav.tabBarItem = alipayTab;
     alipayNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
@@ -38,6 +40,8 @@
     SecondViewController *secondViewController = [[SecondViewController alloc] init];
     UINavigationController *recordNav = [[UINavigationController alloc]
                                          initWithRootViewController: secondViewController];
+    recordNav.navigationBar.tintColor = [UIColor whiteColor];
+    recordNav.navigationBar.barStyle = UIBarStyleBlack;
     UITabBarItem *recordTab = [[UITabBarItem alloc] initWithTitle: @"账单" image: nil tag: 1];
     recordNav.tabBarItem = recordTab;
     recordNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
@@ -46,6 +50,8 @@
     ThirdViewController *thirdViewControlle = [[ThirdViewController alloc] init];
     UINavigationController *assetNav = [[UINavigationController alloc]
                                         initWithRootViewController: thirdViewControlle];
+    assetNav.navigationBar.tintColor = [UIColor whiteColor];
+    assetNav.navigationBar.barStyle = UIBarStyleBlack;
     UITabBarItem *assetTab = [[UITabBarItem alloc] initWithTitle: @"我的资产" image:nil tag: 0];
     assetNav.tabBarItem = assetTab;
     assetNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
@@ -54,6 +60,8 @@
     FourthViewController *fourthViewController = [[FourthViewController alloc] init];
     UINavigationController *safetyNav = [[UINavigationController alloc]
                                          initWithRootViewController: fourthViewController];
+    safetyNav.navigationBar.tintColor = [UIColor whiteColor];
+    safetyNav.navigationBar.barStyle = UIBarStyleBlack;
     UITabBarItem *safetyTab = [[UITabBarItem alloc] initWithTitle: @"安全" image: nil tag: 1];
     safetyNav.tabBarItem = safetyTab;
     safetyNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]

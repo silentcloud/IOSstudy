@@ -51,6 +51,8 @@
 		51C93B571822365800A2A269 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C93B561822365800A2A269 /* TutorialViewController.m */; };
 		51C93B5B182236CE00A2A269 /* TutoriaItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C93B5A182236CE00A2A269 /* TutoriaItemViewController.m */; };
 		51F0B7E718225C6700A813B8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F0B7E618225C6700A813B8 /* FirstViewController.m */; };
+		51F0B7EC182277A500A813B8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F0B7EB182277A500A813B8 /* AboutViewController.m */; };
+		51F0B7EF18227D1400A813B8 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F0B7EE18227D1400A813B8 /* FeedBackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,10 @@
 		51C93B5A182236CE00A2A269 /* TutoriaItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutoriaItemViewController.m; sourceTree = "<group>"; };
 		51F0B7E518225C6700A813B8 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = TabNav/FirstViewController.h; sourceTree = "<group>"; };
 		51F0B7E618225C6700A813B8 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = TabNav/FirstViewController.m; sourceTree = "<group>"; };
+		51F0B7EA182277A500A813B8 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		51F0B7EB182277A500A813B8 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		51F0B7ED18227D1400A813B8 /* FeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackViewController.h; sourceTree = "<group>"; };
+		51F0B7EE18227D1400A813B8 /* FeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +183,7 @@
 		5124026C182151B700E8DA17 /* TabNav */ = {
 			isa = PBXGroup;
 			children = (
-				51C93B1C1822281000A2A269 /* images */,
+				51F0B7E91822776C00A813B8 /* About */,
 				51240275182151B700E8DA17 /* TabNavAppDelegate.h */,
 				51240276182151B700E8DA17 /* TabNavAppDelegate.m */,
 				51C93B581822366600A2A269 /* TabClass */,
@@ -185,6 +191,7 @@
 				51C93B561822365800A2A269 /* TutorialViewController.m */,
 				51C93B59182236CE00A2A269 /* TutoriaItemViewController.h */,
 				51C93B5A182236CE00A2A269 /* TutoriaItemViewController.m */,
+				51C93B1C1822281000A2A269 /* images */,
 				51240278182151B700E8DA17 /* Images.xcassets */,
 				5124026D182151B700E8DA17 /* Supporting Files */,
 			);
@@ -268,6 +275,17 @@
 			);
 			name = TabClass;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		51F0B7E91822776C00A813B8 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				51F0B7EA182277A500A813B8 /* AboutViewController.h */,
+				51F0B7EB182277A500A813B8 /* AboutViewController.m */,
+				51F0B7ED18227D1400A813B8 /* FeedBackViewController.h */,
+				51F0B7EE18227D1400A813B8 /* FeedBackViewController.m */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F0B7EC182277A500A813B8 /* AboutViewController.m in Sources */,
+				51F0B7EF18227D1400A813B8 /* FeedBackViewController.m in Sources */,
 				512402A0182155D900E8DA17 /* FourthViewController.m in Sources */,
 				5124029A1821523100E8DA17 /* SecondViewController.m in Sources */,
 				5124029D182155C600E8DA17 /* ThirdViewController.m in Sources */,
