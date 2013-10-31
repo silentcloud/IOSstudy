@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TutorialViewController;
 
 @interface TabNavAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) TutorialViewController *tutoriaViewController;
+@property (nonatomic, strong) IBOutlet UITabBarController *mainTabBarController;
+
+- (void)loadMainView;
+-(void)loadTutoriaView;
 
 @end

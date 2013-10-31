@@ -7,14 +7,76 @@
 //
 
 #import "TabNavAppDelegate.h"
+#import "TutorialViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FourthViewController.h"
 
 @implementation TabNavAppDelegate
+
+@synthesize window = _window;
+@synthesize tutoriaViewController = _tutoriaViewController;
+@synthesize mainTabBarController = _mainTabBarController;
+
+-(void)loadTutoriaView
+{
+    self.tutoriaViewController = [[TutorialViewController alloc]init];
+    [self.window addSubview:self.tutoriaViewController.view];
+}
+
+-(void)loadMainView
+{
+    FirstViewController *firstViewController = [[FirstViewController alloc] init];
+    UINavigationController *alipayNav = [[UINavigationController alloc]
+                                         initWithRootViewController: firstViewController];
+    UITabBarItem *alipayTab = [[UITabBarItem alloc] initWithTitle: @"支付宝" image:nil tag: 0];
+    alipayNav.tabBarItem = alipayTab;
+    alipayNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
+                                                                   pathForResource:@"home" ofType:@"png"]];
+    
+    SecondViewController *secondViewController = [[SecondViewController alloc] init];
+    UINavigationController *recordNav = [[UINavigationController alloc]
+                                         initWithRootViewController: secondViewController];
+    UITabBarItem *recordTab = [[UITabBarItem alloc] initWithTitle: @"账单" image: nil tag: 1];
+    recordNav.tabBarItem = recordTab;
+    recordNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
+                                                                   pathForResource:@"bill" ofType:@"png"]];
+    
+    ThirdViewController *thirdViewControlle = [[ThirdViewController alloc] init];
+    UINavigationController *assetNav = [[UINavigationController alloc]
+                                        initWithRootViewController: thirdViewControlle];
+    UITabBarItem *assetTab = [[UITabBarItem alloc] initWithTitle: @"我的资产" image:nil tag: 0];
+    assetNav.tabBarItem = assetTab;
+    assetNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
+                                                                   pathForResource:@"assets" ofType:@"png"]];
+    
+    FourthViewController *fourthViewController = [[FourthViewController alloc] init];
+    UINavigationController *safetyNav = [[UINavigationController alloc]
+                                         initWithRootViewController: fourthViewController];
+    UITabBarItem *safetyTab = [[UITabBarItem alloc] initWithTitle: @"安全" image: nil tag: 1];
+    safetyNav.tabBarItem = safetyTab;
+    safetyNav.tabBarItem.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]
+                                                                   pathForResource:@"safety" ofType:@"png"]];
+    
+    self.mainTabBarController = [[UITabBarController alloc] init];
+    
+    self.mainTabBarController.viewControllers = [NSArray arrayWithObjects: alipayNav, recordNav, assetNav, safetyNav,nil];
+    
+    [self.window addSubview: self.mainTabBarController.view];
+    
+}
+
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [self loadTutoriaView];
+    //self.window.rootViewController = tabBarController.view;
+    //[self.window addSubview: tabBarController.view];
+    //self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
